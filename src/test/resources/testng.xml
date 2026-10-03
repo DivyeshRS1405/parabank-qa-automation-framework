@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ParaBank QA Automation Suite" verbose="1">
+
+    <listeners>
+        <listener class-name="com.divyesh.tests.listeners.TestListener"/>
+        <listener class-name="com.divyesh.tests.listeners.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="UI Tests">
+        <classes>
+            <class name="com.divyesh.tests.ui.LoginTest"/>
+            <class name="com.divyesh.tests.ui.RegistrationTest"/>
+            <class name="com.divyesh.tests.ui.AccountsTest"/>
+            <class name="com.divyesh.tests.ui.TransferFundsTest"/>
+            <class name="com.divyesh.tests.ui.BillPayTest"/>
+            <class name="com.divyesh.tests.ui.RequestLoanTest"/>
+            <class name="com.divyesh.tests.ui.UpdateProfileTest"/>
+        </classes>
+    </test>
+
+    <test name="API Tests">
+        <classes>
+            <class name="com.divyesh.tests.api.CustomerApiTest"/>
+            <class name="com.divyesh.tests.api.AccountApiTest"/>
+            <class name="com.divyesh.tests.api.TransferApiTest"/>
+            <class name="com.divyesh.tests.api.LoanApiTest"/>
+        </classes>
+    </test>
+
+    <test name="Database Tests">
+        <classes>
+            <class name="com.divyesh.tests.db.AccountDbTest"/>
+        </classes>
+    </test>
+
+</suite>
