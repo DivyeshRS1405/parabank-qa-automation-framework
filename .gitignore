@@ -40,7 +40,7 @@ bin/
 # ============================================================
 
 test-output/
-reports/
+/reports/
 surefire-reports/
 failsafe-reports/
 
